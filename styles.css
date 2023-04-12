@@ -35,7 +35,6 @@ nav ul {
 .box{
     border: 2px solid black;
     font-size: 8vw;
-    font-family: 'Chivo Mono', monospace;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
@@ -48,13 +47,17 @@ nav ul {
     background-color: rgb(243, 208, 192);
 }
 
+.info {
+    font-size: 22px;
+}
 .gameInfo {
     padding: 0 34px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .imgbox img{
-    display: none;
+    width: 0;
+    transition: width 1s ease-in-out;
 }
 
 .br-0{
@@ -71,4 +74,15 @@ nav ul {
 
 .bb-0 {
     border-bottom: 0;
+}
+
+#reset {
+    margin: 0 23px;
+    padding: 1px 18px;
+    background-color: rgb(203, 203, 239);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 15px;
+    font-weight: bolder;
 }
