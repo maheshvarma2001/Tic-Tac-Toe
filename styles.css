@@ -54,7 +54,9 @@ nav ul {
     padding: 0 34px;
     font-family: 'Montserrat', sans-serif;
 }
-
+.gameInfo h1{
+    font-size: 2.5rem;
+}
 .imgbox img{
     width: 0;
     transition: width 1s ease-in-out;
@@ -85,4 +87,21 @@ nav ul {
     font-family: 'Chivo Mono', monospace;
     font-size: 15px;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 880px) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
 }
